@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,6 +81,9 @@
     .exams:hover {
       background-color: #84C406;
     }
+    span {
+      transition: 0.6s;
+    }
   </style>
 </head>
 <body>
@@ -97,7 +101,7 @@
         <td class="empty-end"></td>
         <td class="single">1</td>
         <td class="single">2</td>
-        <td class="single no-school-elementary">3</td>
+        <td onmouseover="info.innerHTML = 'No School (Elementary)'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="single no-school-elementary">3</td>
       </tr>
       <tr>
         <td class="single">6</td>
@@ -114,11 +118,11 @@
         <td>17</td>
       </tr>
       <tr>
-        <td class="no-school">20</td>
-        <td class="no-school">21</td>
-        <td class="no-school">22</td>
-        <td class="no-school">23</td>
-        <td class="no-school">24</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" class="no-school" onmouseout="info.innerHTML = ''; info.style.opacity = '0'">20</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">21</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">22</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">23</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">24</td>
       </tr>
       <tr>
         <td>27</td>
@@ -160,20 +164,29 @@
         <td>15</td>
       </tr>
       <tr>
-        <td class="exams">18</td>
-        <td class="exams">19</td>
-        <td class="exams">20</td>
-        <td class="half-day-end-quarter">21</td>
-        <td class="no-school">22</td>
+        <td onmouseover="info.innerHTML = 'Exams'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="exams">18</td>
+        <td onmouseover="info.innerHTML = 'Exams'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="exams">19</td>
+        <td onmouseover="info.innerHTML = 'Exams'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="exams">20</td>
+        <td onmouseover="info.innerHTML = 'Half Day (End of Quarter)'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="half-day-end-quarter">21</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">22</td>
       </tr>
       <tr>
-        <td class="no-school">25</td>
-        <td class="no-school">26</td>
-        <td class="no-school">27</td>
-        <td class="no-school">28</td>
-        <td class="no-school">29</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">25</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">26</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">27</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">28</td>
+        <td onmouseover="info.innerHTML = 'No School'; info.style.opacity = '1'" onmouseout="info.innerHTML = ''; info.style.opacity = '0'" class="no-school">29</td>
       </tr>
   </table>
   </center>
+  <span id="info" style="opacity: 0;"></span>
+<script>
+ var = info;
+ info = "document.getElementById('info')";
+ var = blurin;
+ blurin = "info.style.opacity = '1'";
+ var = blurout;
+ blurout = "info.style.opacity = '1'";
+</script>
 </body>
 </html>
